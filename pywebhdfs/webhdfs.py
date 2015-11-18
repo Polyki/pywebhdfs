@@ -654,7 +654,7 @@ class PyWebHdfsClient(object):
                 params=keyword_params, key=key, value=value)
 
         base_uri = 'http://{{host}}:{port}/webhdfs/v1/'.format(
-            port=self.port)
+            host=self.host,port=self.port)
 
         # build the complete uri from the base uri and all configured params
         uri = '{base_uri}{path}{operation}{keyword_args}{auth}'.format(
