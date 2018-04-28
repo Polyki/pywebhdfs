@@ -125,7 +125,7 @@ class PyWebHdfsClient(object):
 
         >>> hdfs = PyWebHdfsClient(host='host',port='50070', user_name='hdfs')
         >>> my_data = '01010101010101010101010101010101'
-        >>> my_file = 'user/hdfs/data/myfile.txt'
+        >>> my_file = 'C:\Users\lenovo\VirtualBox VMs\Hortonworks Docker Sandbox HDP'
         >>> hdfs.append_file(my_file, my_data)
 
         Example with optional args:
